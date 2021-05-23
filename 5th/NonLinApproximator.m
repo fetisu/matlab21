@@ -1,5 +1,4 @@
 function [P, sgP] = NonLinApproximator (y,r,fun, P_0)
-% P_0 is a line-array with starting guess for values of parameters
 % p_number - число параметров P
 N = size(y, 2);
 p_number = length(P_0);
