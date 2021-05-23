@@ -8,11 +8,11 @@ M  = size(funcs, 1);
 
 
 auxilary = zeros(N, M);
-for ii = 1 : N
-    for jj = 1 : M
-        f = cell2mat(funcs(jj));
-        vec = num2cell(r(:, ii));
-        auxilary(ii, jj) =  f(vec{:});
+for istr = 1 : N
+    for icol = 1 : M
+        f = cell2mat(funcs(icol));
+        vec = num2cell(r(:, istr));
+        auxilary(istr, icol) =  f(vec{:});
     end
 end
 
